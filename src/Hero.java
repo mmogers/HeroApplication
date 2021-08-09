@@ -1,25 +1,31 @@
 //Hero, HeroType, District, HeroApp17, HeroAppMarinaMRun
-public class Hero {
-    private String name;
-    private String surname;
+public class Hero extends Person {
+    //private String name;
+    //private String surname;
     private String nickname;
     private int heroID;
-    private HeroType heroType;
+    //private HeroType heroType;
     private int deedTime;
-
-
-    public Hero(String inputName, String inputSurname, String inputNickname, int inputHeroID, HeroType inputHeroType, int inputDeedTime) {
-        this.name = inputName;
-        this.surname = inputSurname;
-        this.nickname = inputNickname;
-        this.heroID = inputHeroID;
-        this.heroType = inputHeroType;
-        this.deedTime = inputDeedTime;
-    }
 
     public Hero() {
     }
 
+    public Hero(String name, String surname) {
+        super(name, surname);
+    }
+
+    public Hero(String nickname, int heroID, int deedTime) {
+        this.nickname = nickname;
+        this.heroID = heroID;
+        this.deedTime = deedTime;
+    }
+
+    public Hero(String name, String surname, String nickname, int heroID, int deedTime) {
+        super(name, surname);
+        this.nickname = nickname;
+        this.heroID = heroID;
+        this.deedTime = deedTime;
+    }
 
     public int calculatedLevel(){
         if (deedTime < 20) {
@@ -37,31 +43,13 @@ public class Hero {
     @Override
     public String toString() {
         return "Hero{" +
-                "name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", nickname='" + nickname + '\'' +
+                "nickname='" + nickname + '\'' +
                 ", heroID=" + heroID +
-                ", heroType='" + heroType + '\'' +
                 ", deedTime=" + deedTime +
-                '}' + '\n';
+                '}';
     }
 
-    //GETTERS AND SETTERS
-    public String getName() {
-        return name;
-    }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getSurname() {
-        return surname;
-    }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
 
     public String getNickname() {
         return nickname;
@@ -79,13 +67,6 @@ public class Hero {
         this.heroID = heroID;
     }
 
-    public HeroType getHeroType() {
-        return heroType;
-    }
-
-    public void setHeroType(HeroType heroType) {
-        this.heroType = heroType;
-    }
 
     public int getDeedTime() {
         return deedTime;

@@ -1,22 +1,24 @@
+/*
 //17 HW
+//08/09/- doesn't work :(
 
 import java.util.ArrayList;
 
 //Hero, HeroType, District, HeroApp17, HeroAppMarinaMRun
-public class HeroApp {
+public class HeroAppHW {
     public static void main(String[] args) {
 
         //initializing 3 heroes
         Hero hero1 = new Hero("Artjoms", "Petrovs", "Aliexpressman", 12345678, HeroType.Hero, 100);
         Hero hero2 = new Hero("fh", "Black", "FastWing", 123321, HeroType.Hero, 30);
-        //Hero hero3 = new Hero("Waterman", "Cooper", "BabyShark", 111111, HeroType.Villian, (short)30);
-        Hero hero3 = new Hero();
-        hero3.setHeroID(111111);
-        hero3.setName("Waterman");
-        hero3.setSurname("Cooper");
-        hero3.setNickname("BabyShark");
-        hero3.setHeroType(HeroType.Villian);
-        hero3.setDeedTime(30);
+        Hero hero3 = new Hero("Waterman", "Cooper", "BabyShark", 111111, HeroType.Villian, 30);
+        //hero hero3 = new Hero();
+        //hero3.setHeroID(111111);
+        //hero3.setName("Waterman");
+        //hero3.setSurname("Cooper");
+        //hero3.setNickname("BabyShark");
+        //hero3.setHeroType(HeroType.Villian);
+        //hero3.setDeedTime(30);
         System.out.println();
         System.out.println("Some details on some heroes: ");
         System.out.println(" The name of h1 is : " + hero1.getName());
@@ -167,4 +169,4 @@ public class HeroApp {
         District district2 = new District();
         System.out.println(district2.toString());
     }
-}
+}*/
