@@ -27,6 +27,19 @@ public class Villian extends Person{
         super(name, surname);
     }
 
+
+    @Override
+    public String toString() {
+        return "Villian{" +
+                "name='" + getName() + '\'' +
+                ", surname='" + getSurname() + '\'' +
+                ", nickname='" + nickname + '\'' +
+                ", villianID=" + villianID +
+                ", crimeTime=" + crimeTime +
+                '}';
+    }
+
+
     public String getNickname() {
         return nickname;
     }
@@ -51,14 +64,5 @@ public class Villian extends Person{
         this.crimeTime = crimeTime;
     }
 
-    @Override
-    public String toString() {
-        return "Villian{" +
-                "name='" + getName() + '\'' +
-                ", surname='" + getSurname() + '\'' +
-                ", nickname='" + nickname + '\'' +
-                ", villianID=" + villianID +
-                ", crimeTime=" + crimeTime +
-                '}';
-    }
+
 }
