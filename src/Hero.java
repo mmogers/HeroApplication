@@ -43,8 +43,8 @@ public class Hero extends Person {
     @Override
     public String toString() {
         return "Hero{" +
-                "name='" + getName() + '\'' +
-                ", surname='" + getSurname() + '\'' +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
                 "nickname='" + nickname + '\'' +
                 ", heroID=" + heroID +
                 ", deedTime=" + deedTime +

@@ -31,8 +31,8 @@ public class Villian extends Person{
     @Override
     public String toString() {
         return "Villian{" +
-                "name='" + getName() + '\'' +
-                ", surname='" + getSurname() + '\'' +
+                "name='" + name+ '\'' +
+                ", surname='" + surname+ '\'' +
                 ", nickname='" + nickname + '\'' +
                 ", villianID=" + villianID +
                 ", crimeTime=" + crimeTime +

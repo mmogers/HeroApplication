@@ -1,6 +1,6 @@
-/*
+
 //17 HW
-//08/09/- doesn't work :(
+
 
 import java.util.ArrayList;
 
@@ -9,9 +9,9 @@ public class HeroAppHW {
     public static void main(String[] args) {
 
         //initializing 3 heroes
-        Hero hero1 = new Hero("Artjoms", "Petrovs", "Aliexpressman", 12345678, HeroType.Hero, 100);
-        Hero hero2 = new Hero("fh", "Black", "FastWing", 123321, HeroType.Hero, 30);
-        Hero hero3 = new Hero("Waterman", "Cooper", "BabyShark", 111111, HeroType.Villian, 30);
+        Hero hero1 = new Hero("Artjoms", "Petrovs", "Aliexpressman", 12345678,  100);
+        Hero hero2 = new Hero("fh", "Black", "FastWing", 123321,  30);
+        Hero hero3 = new Hero("Waterman", "Cooper", "BabyShark", 111111,  30);
         //hero hero3 = new Hero();
         //hero3.setHeroID(111111);
         //hero3.setName("Waterman");
@@ -85,13 +85,13 @@ public class HeroAppHW {
 //-----------------------------17 lesson
         //7 heroes
         System.out.println();
-        Hero heroOne = new Hero("Joe", "Black", "Tall", 111, HeroType.Villian, 10);
-        Hero heroTwo = new Hero("John", "Leibovsky", "Fat", 222, HeroType.Hero, 10);
-        Hero heroThree = new Hero("Bob", "Kaplan", "Nice", 333, HeroType.Hero, 100);
-        Hero heroFour = new Hero("Dany", "Cooper", "Angry", 444, HeroType.Villian, 30);
-        Hero heroFive = new Hero("Ben", "Button", "Smiley", 555, HeroType.Hero, 30);
-        Hero heroSix = new Hero("Peter", "Parker", "Clever", 666, HeroType.Hero, 30);
-        Hero heroSeven = new Hero("Harry", "Potter", "GoodBoy", 777, HeroType.Villian, 30);
+        Hero heroOne = new Hero("Joe", "Black", "Tall", 111, 10);
+        Hero heroTwo = new Hero("John", "Leibovsky", "Fat", 222,  10);
+        Hero heroThree = new Hero("Bob", "Kaplan", "Nice", 333, 100);
+        Hero heroFour = new Hero("Dany", "Cooper", "Angry", 444,  30);
+        Hero heroFive = new Hero("Ben", "Button", "Smiley", 555,  30);
+        Hero heroSix = new Hero("Peter", "Parker", "Clever", 666,  30);
+        Hero heroSeven = new Hero("Harry", "Potter", "GoodBoy", 777, 30);
         //making 2 districts
         District districtOne = new District();
         districtOne.setTitle("Southern district");
@@ -169,4 +169,4 @@ public class HeroAppHW {
         District district2 = new District();
         System.out.println(district2.toString());
     }
-}*/
+}
